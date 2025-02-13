@@ -1,0 +1,37 @@
+name: ISAAC
+version: '1.3'
+main: org.ISAAC.iSAAC.ISAAC
+api: '1.0'
+api-version: '1.21'
+
+commands:
+  login:
+    description: Se connecter au serveur.
+    usage: /login <password>
+    permission: isaac.command.login
+  register:
+    description: S'enregistrer sur le serveur.
+    usage: /register <password> <confirm_password>
+    permission: isaac.command.register
+  vanish:
+    description: Se rendre invisible.
+    usage: /vanish
+    permission: isaac.command.vanish
+  sethome:
+    description: creer un home avec son nom
+    usage: /sethome <name>
+    permission: isaac.command.sethome
+
+permissions:
+  isaac.command.login:
+    description: Permet aux joueurs non connectés d'utiliser la commande /login
+    default: true
+  isaac.command.register:
+    description: Permet aux joueurs non connectés d'utiliser la commande /register
+    default: true
+  isaac.command.vanish:
+    description: Permet aux joueurs de se rendre invisible
+    default: op
+  isaac.command.sethome:
+    description: Permet aux joueurs set un home
+    default: op

@@ -1,0 +1,8 @@
+org/ISAAC/iSAAC/RANK.class
+org/ISAAC/iSAAC/commands/LoginCommand.class
+org/ISAAC/iSAAC/RankManager.class
+org/ISAAC/iSAAC/commands/SethomeCommand.class
+org/ISAAC/iSAAC/commands/VanishCommand.class
+org/ISAAC/iSAAC/commands/RegisterCommand.class
+org/ISAAC/iSAAC/EnvLoader.class
+org/ISAAC/iSAAC/ISAAC.class

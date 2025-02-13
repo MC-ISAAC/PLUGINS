@@ -1,0 +1,16 @@
+services:
+  server-mc-test:
+    image: itzg/minecraft-server:latest
+    container_name: server-mc-test
+    ports:
+      - "25565:25565"
+      - "8100:8100"
+    environment:
+      EULA: "TRUE"
+      MEMORY: "6G"
+      TYPE: "PAPER"
+      VERSION: "1.21.4"
+      ONLINE_MODE: "FALSE"
+    volumes:
+      - ./minecraft-data:/data
+    restart: unless-stopped
